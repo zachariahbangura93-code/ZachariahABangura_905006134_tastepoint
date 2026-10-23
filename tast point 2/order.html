@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastePoint Restaurant | Place Your Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">🍴 TastePoint</a>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html" class="active">Order Online</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="container">
+    <h2 class="section-title">PLACE YOUR ORDER</h2>
+
+    <!-- Order Progress Indicator -->
+    <div class="order-steps">
+      <div class="step active">
+        <span class="step-number">1</span> Select Food
+      </div>
+      <div class="step active">
+        <span class="step-number">2</span> Review
+      </div>
+      <div class="step">
+        <span class="step-number">3</span> Payment
+      </div>
+      <div class="step">
+        <span class="step-number">4</span> Confirm
+      </div>
+    </div>
+
+    <!-- Cart Table -->
+    <h3 style="margin-bottom: 15px; color: var(--secondary-color);">Your Cart</h3>
+    <div style="overflow-x: auto;">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Salone Jollof Rice</strong>
+            </td>
+            <td>
+              <div class="qty-control">
+                <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+                <span>1</span>
+                <button class="qty-btn" onclick="updateQty(this, 1)">+</button>
+              </div>
+            </td>
+            <td>$5.00</td>
+            <td><button class="remove-btn" onclick="removeRow(this)">🗑️</button></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Grilled Chicken</strong>
+            </td>
+            <td>
+              <div class="qty-control">
+                <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+                <span>1</span>
+                <button class="qty-btn" onclick="updateQty(this, 1)">+</button>
+              </div>
+            </td>
+            <td>$7.00</td>
+            <td><button class="remove-btn" onclick="removeRow(this)">🗑️</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Order Summary & Details -->
+    <div class="grid-2">
+      <div style="background: var(--bg-white); padding: 20px; border-radius: 8px;">
+        <h3 style="margin-bottom: 15px;">Delivery / Pickup</h3>
+        
+        <div class="form-group" style="display: flex; gap: 20px;">
+          <label><input type="radio" name="orderType" value="delivery" checked> Delivery</label>
+          <label><input type="radio" name="orderType" value="pickup"> Pickup</label>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Delivery Address</label>
+          <input type="text" id="address" class="form-control" placeholder="Enter your address...">
+        </div>
+      </div>
+
+      <div style="background: var(--bg-white); padding: 20px; border-radius: 8px;">
+        <h3 style="margin-bottom: 15px;">Order Summary</h3>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+          <span>Subtotal:</span>
+          <strong>$12.00</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+          <span>Delivery Fee:</span>
+          <strong>$2.00</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 1.2rem; margin-bottom: 20px;">
+          <span>Total:</span>
+          <strong style="color: var(--primary-color);">$14.00</strong>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;" onclick="alert('Proceeding to payment gateway!')">Proceed to Payment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <h3>TastePoint Restaurant</h3>
+      <p>Good Food. Happy People.</p>
+      <div class="footer-bottom">
+        &copy; 2026 TastePoint Restaurant. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+
+    function updateQty(btn, change) {
+      const span = btn.parentElement.querySelector('span');
+      let currentVal = parseInt(span.innerText);
+      currentVal += change;
+      if (currentVal >= 1) {
+        span.innerText = currentVal;
+      }
+    }
+
+    function removeRow(btn) {
+      const row = btn.closest('tr');
+      row.remove();
+    }
+  </script>
+</body>
+</html>

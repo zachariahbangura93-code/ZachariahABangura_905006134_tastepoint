@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastePoint Restaurant | Our Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 8px 18px;
+      border: 1px solid var(--primary-color);
+      background: none;
+      color: var(--primary-color);
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">🍴 TastePoint</a>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="container">
+    <h2 class="section-title">OUR MENU</h2>
+
+    <!-- Categories Filter -->
+    <div class="filter-buttons">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Meals</button>
+      <button class="filter-btn">Drinks</button>
+      <button class="filter-btn">Specials</button>
+    </div>
+
+    <!-- Menu Items Grid (All images standardized via CSS) -->
+    <div class="grid-3">
+
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.lKQ93GDKcyVCWMlZ_or_DQHaIJ?r=0&pid=ImgDet&w=178&h=195&c=7&dpr=1.5&o=7&rm=3" alt="Cassava Leaf">
+        <div class="card-body">
+          <h3 class="card-title">Cassava Leaf & Rice</h3>
+          <p class="card-text">A traditional Sierra Leonean Cassava leaf stew served with rice.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.zi5g0t5GreHIQQsiiPvFLAHaHa?r=0&w=720&h=720&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Groundnut Soup">
+        <div class="card-body">
+          <h3 class="card-title">Groundnut Soup & Rice</h3>
+          <p class="card-text">A rich and creamy groundnut soup prepared with local spices.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lrSFCjfoME3vhu6ffKhehgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Potato Leaf">
+        <div class="card-body">
+          <h3 class="card-title">Potato Leaf & Rice</h3>
+          <p class="card-text">Flavourful potato leaf stew cooked with local ingredients.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.u976Q64g7WHIxW5aQUx0QgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Salone Jollof Rice">
+        <div class="card-body">
+          <h3 class="card-title">Salone Jollof Rice</h3>
+          <p class="card-text">Delicious Sierra Leonean-style jollof rice cooked with tomatoes and spices.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/030/076/938/non_2x/a-plate-of-rice-and-a-bowl-of-rice-ai-generated-free-photo.jpg" alt="Rice and Beans">
+        <div class="card-body">
+          <h3 class="card-title">Rice & Beans</h3>
+          <p class="card-text">A simple and filling combination of seasoned rice and beans.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.9C4wXCVzKD7rxqvgdhWHTgHaLH?r=0&w=600&h=900&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Rice and Stew">
+        <div class="card-body">
+          <h3 class="card-title">Rice & Stew</h3>
+          <p class="card-text">Steamed rice served with a rich, flavorful tomato stew.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h3>TastePoint Restaurant</h3>
+      <p>Good Food. Happy People.</p>
+      <div class="footer-bottom">
+        &copy; 2026 TastePoint Restaurant. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

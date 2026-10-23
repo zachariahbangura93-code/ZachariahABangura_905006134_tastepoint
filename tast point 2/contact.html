@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastePoint Restaurant | Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">🍴 TastePoint</a>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="container">
+    <h2 class="section-title">GET IN TOUCH</h2>
+
+    <div class="grid-2">
+      <!-- Contact Details & Map -->
+      <div>
+        <div style="background-color: var(--bg-white); padding: 25px; border-radius: 8px; margin-bottom: 20px;">
+          <h3 style="margin-bottom: 15px; color: var(--secondary-color);">Contact Information</h3>
+          <p style="margin-bottom: 10px;">📞 +232 76 123 456</p>
+          <p style="margin-bottom: 10px;">✉️ info@tastepoint.com</p>
+          <p>📍 Jui Junction, opposite Freetown Polytechnic University, Sierra Leone</p>
+        </div>
+
+        <!-- Embedded Map Placeholder -->
+        <div style="background: #e2e8f0; height: 220px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-weight: 600;">
+          📍 Map Location: Jui Junction, Freetown
+        </div>
+      </div>
+
+      <!-- Message Form -->
+      <div style="background-color: var(--bg-white); padding: 25px; border-radius: 8px;">
+        <h3 style="margin-bottom: 15px; color: var(--secondary-color);">Send Us a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Your Full Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Your Email Address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <h3>TastePoint Restaurant</h3>
+      <p>Good Food. Happy People.</p>
+      <div class="footer-bottom">
+        &copy; 2026 TastePoint Restaurant. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

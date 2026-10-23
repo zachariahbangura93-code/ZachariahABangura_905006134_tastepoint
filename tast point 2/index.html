@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastePoint Restaurant | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">🍴 TastePoint</a>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Good Food Brings People Together</h1>
+      <p>Fresh Meals • Great Taste • Always</p>
+      <a href="order.html" class="btn btn-primary">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Popular Meals Section -->
+  <section class="container">
+    <h2 class="section-title">TastePoint's Fan Favorites</h2>
+    <div class="grid-4">
+      
+      <!-- Cassava Leaves -->
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.lKQ93GDKcyVCWMlZ_or_DQHaIJ?r=0&pid=ImgDet&w=178&h=195&c=7&dpr=1.5&o=7&rm=3" alt="Cassava Leaves">
+        <div class="card-body">
+          <h3 class="card-title">Cassava Leaves</h3>
+          <p class="card-text">Traditional cassava leaves stew served with warm rice.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Groundnut Soup -->
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.zi5g0t5GreHIQQsiiPvFLAHaHa?r=0&w=720&h=720&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Groundnut Soup">
+        <div class="card-body">
+          <h3 class="card-title">Groundnut Soup</h3>
+          <p class="card-text">Rice and creamy groundnut stew served with tender chicken.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Potato Leaves -->
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lrSFCjfoME3vhu6ffKhehgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Potato Leaves">
+        <div class="card-body">
+          <h3 class="card-title">Potato Leaves</h3>
+          <p class="card-text">Flavourful potato leaves stew cooked with local spices.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+      <!-- Salone Jollof Rice -->
+      <div class="card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.u976Q64g7WHIxW5aQUx0QgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Salone Jollof Rice">
+        <div class="card-body">
+          <h3 class="card-title">Salone Jollof Rice</h3>
+          <p class="card-text">Local style jollof rice with rich tomato and spice flavours.</p>
+          <div class="card-price">SLE 80</div>
+          <a href="order.html" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="container">
+    <h2 class="section-title">Why Choose TastePoint?</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <h3>🍲 Delicious Food</h3>
+        <p>Fresh local ingredients prepared daily.</p>
+      </div>
+      <div class="feature-box">
+        <h3>⚡ Fast Service</h3>
+        <p>Quick preparation for dine-in & delivery.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🥇 Quality Ingredients</h3>
+        <p>Authentic African & local recipes.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📱 Convenient Ordering</h3>
+        <p>Easy online order processing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h3>TastePoint Restaurant</h3>
+      <p>Good Food. Happy People.</p>
+      <div class="footer-bottom">
+        &copy; 2026 TastePoint Restaurant. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
