@@ -1,55 +1,39 @@
-# TastePoint Restaurant - Responsive Website
+# TastePoint Restaurant Online Ordering Website
 
-**Module:** DCOMP 204 – Web Design  
-**Institution:** Limkokwing University of Creative Technology, Sierra Leone  
-**Student Name:** Zachariah A. Bangura  
-**Student ID:** 905006134  
-**Lecturer/Examiner:** Mr. Amadu Kamara  
+## About the website
+TastePoint Restaurant is a responsive multi-page website concept designed for local food service and online ordering in Freetown, Sierra Leone[span_1](start_span)[span_1](end_span). It introduces the restaurant concept, highlights popular local meals, provides clear food descriptions and prices, and gives visitors a convenient way to browse menus and manage food orders[span_2](start_span)[span_2](end_span).
 
----
+The website is designed for restaurant customers, busy university students, working professionals, local residents, and restaurant management seeking a digital dining and ordering solution[span_3](start_span)[span_3](end_span).
 
-## 📌 Project Overview
-TastePoint Restaurant is a responsive multi-page website designed to provide customers in Freetown with convenient access to restaurant information, menu options, prices, and an online food ordering workflow.
+The website presents core menu categories including traditional meals, drinks, and specials[span_4](start_span)[span_4](end_span). Its content focuses on accessible food information, clear pricing in SLE and USD, and a streamlined 3-step ordering process[span_5](start_span)[span_5](end_span). The organisation and its ordering functions are presented as a frontend website prototype; the checkout and cart interactions are demonstrations and are not connected to a real payment gateway or server.
 
-This repository represents the implementation of **Assignment 2**, converting the **Assignment 1** design, wireframes, and Information Architecture into a fully functional HTML, CSS, and JavaScript website.
+## Main sections and visitor tasks
+* **Home (index.html)** introduces the restaurant's purpose, highlights fan-favorite dishes, displays core benefits, and directs visitors to the menu or ordering page[span_6](start_span)[span_6](end_span).
+* **About Us (about.html)** explains the restaurant's background story, mission statement, core values, and available dining services[span_7](start_span)[span_7](end_span).
+* **Menu (menu.html)** displays food categories with filter options, standardized food cards, descriptions, and visible prices[span_8](start_span)[span_8](end_span).
+* **Order Online (order.html)** lets visitors track an order progress indicator, review cart items, adjust quantities, select delivery or pickup options, input addresses, and proceed to payment[span_9](start_span)[span_9](end_span).
+* **Contact (contact.html)** provides business contact details, physical location information, and an interactive customer message form[span_10](start_span)[span_10](end_span).
 
----
+The main header links connect Home, About, Menu, Order Online, and Contact. An "Order Now" call-to-action button provides direct access to food ordering. Footer links provide supplementary navigation and copyright information[span_11](start_span)[span_11](end_span).
 
-## 🌐 Live Demo & Repository Links
-* **GitHub Repository:** [https://github.com/YOUR_GITHUB_USERNAME/TastePoint-Website](https://github.com/YOUR_GITHUB_USERNAME/TastePoint-Website)
-* **GitHub Pages Live Link:** [https://YOUR_GITHUB_USERNAME.github.io/TastePoint-Website](https://YOUR_GITHUB_USERNAME.github.io/TastePoint-Website)
+## Visual design
+The site uses a warm, food-friendly color palette anchored by primary red (`#d9534f`), dark slate secondary tones (`#2c3e50`), and clean backgrounds. Generous spacing separates content into readable sections, modern cards organise meal options, and badges display item pricing. High-quality photographs illustrate authentic Sierra Leonean and local dishes. The layout is fully responsive, adapting seamlessly across mobile, tablet, and desktop screens[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span).
 
----
+## Project files
+* `index.html`, `about.html`, `menu.html`, `order.html`, and `contact.html` contain the individual site pages[span_14](start_span)[span_14](end_span).
+* `style.css` contains the shared responsive layout, color scheme, typography, grid systems, and component styling.
+* Local and web-sourced image assets provide realistic meal and restaurant visualization[span_15](start_span)[span_15](end_span).
 
-## 📄 Website Pages
-1. **Home (`index.html`)** – Hero introduction, featured popular meals, core features, and calls-to-action.
-2. **About Us (`about.html`)** – Restaurant background story, mission statement, and services offered.
-3. **Menu (`menu.html`)** – Category filtering, standardized food cards, descriptions, and pricing.
-4. **Order Online (`order.html`)** – Interactive order table, quantity adjustment controls, delivery/pickup options, and order summary.
-5. **Contact Us (`contact.html`)** – Location details, business hours, and interactive enquiry form.
+## Open and view the website
+1. Download or clone the project repository (`tastepoint-restaurant`)[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span).
+2. Open the project folder in Visual Studio Code or any code editor.
+3. Open `index.html` in a web browser.
+4. Use the header navigation, cards, and interactive cart controls to explore the site and test the food-ordering workflow[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span).
 
----
+The prototype uses plain HTML, CSS, and JavaScript. It does not require package installation, backend setup, or a build step. Internet access is recommended for loading external food preview images.
 
-## 🛠️ Technologies Used
-* **HTML5:** Semantic layout structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
-* **CSS3:** Responsive layouts using Flexbox, CSS Grid, media queries, custom variables, and standard card dimensions.
-* **JavaScript (Vanilla JS):** Mobile menu navigation toggle and dynamic order cart functionality.
-* **Git & GitHub:** Version control and public hosting via GitHub Pages.
-
----
-
-## 📱 Responsive Testing
-The website has been tested and optimized for:
-* **Mobile Devices:** Screen widths up to 600px (hamburger navigation menu and stacked cards).
-* **Tablets:** Screen widths between 601px and 900px (2-column grid system).
-* **Desktops:** Screen widths above 900px (full multi-column grid layout).
-
----
-
-## 🚀 How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/TastePoint-Website.git](https://github.com/YOUR_GITHUB_USERNAME/TastePoint-Website.git)
+## Prototype limitations
+The contact and order forms validate input fields in the browser and display interactive alert notifications. They do not save, process payments, or transmit submitted data to a server. To function in a live production environment, the forms require integration with a backend server, database, or payment processing API. The site contains no live database or user authentication system.
 
 HOME PAGE
    <img width="1920" height="2301" alt="Screenshot 2026-10-23 at 14-43-51 TastePoint Restaurant Home" src="https://github.com/user-attachments/assets/0b845f70-b890-451f-9e09-8cad46365470" />
